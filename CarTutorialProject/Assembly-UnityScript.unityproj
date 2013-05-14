@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Car Control\AICar_Script.js" />
+     <Compile Include="Assets\Scripts\Car Control\AntiRollBarFront.js" />
+     <Compile Include="Assets\Scripts\Car Control\AntiRollBarRear.js" />
      <Compile Include="Assets\Scripts\Car Control\PlayerCar_Script.js" />
      <Compile Include="Assets\Scripts\Car Control\WheelAlignment_Script.js" />
      <None Include="Assets\Artwork\Car\Shaders\ConstantColorUnderLayer_Shader.shader" />

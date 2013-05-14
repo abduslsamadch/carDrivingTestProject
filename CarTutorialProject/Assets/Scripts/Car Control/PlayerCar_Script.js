@@ -38,7 +38,7 @@ function Update () {
 	
 	// This is to limith the maximum speed of the car, adjusting the drag probably isn't the best way of doing it,
 	// but it's easy, and it doesn't interfere with the physics processing.
-	rigidbody.drag = rigidbody.velocity.magnitude / 50;
+	rigidbody.drag = rigidbody.velocity.magnitude / 250;
 	
 	// Compute the engine RPM based on the average RPM of the two wheels, then call the shift gear function
 	EngineRPM = (FrontLeftWheel.rpm + FrontRightWheel.rpm)/2 * GearRatio[CurrentGear];
@@ -64,8 +64,8 @@ function Update () {
 		
 		
 	// the steer angle is an arbitrary value multiplied by the user input.
-	FrontLeftWheel.steerAngle = 5 * Input.GetAxis("Horizontal");
-	FrontRightWheel.steerAngle = 5 * Input.GetAxis("Horizontal");
+	FrontLeftWheel.steerAngle = 20 * Input.GetAxis("Horizontal");
+	FrontRightWheel.steerAngle = 20 * Input.GetAxis("Horizontal");
 	
 	//if(transform.rotation.y)
 }
